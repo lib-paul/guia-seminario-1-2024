@@ -265,6 +265,31 @@ for letra in "Python":
 
 💡 Los ciclos son muy poderosos. Te permiten recorrer listas (mas adelante), repetir cálculos, o pedirle al usuario datos hasta que cumpla cierta condición.
 
+## 4.3 Casting (conversión de tipos)
+
+Cuando pedimos datos con `input()`, **todo lo que escribe el usuario llega como texto (string)**.  
+Pero muchas veces necesitamos trabajar con números para hacer cuentas.  
+
+Ahí aparece el **casting**: convertir un dato de un tipo a otro.  
+
+En Python se hace con funciones ya preparadas, por ejemplo:  
+
+- `int("5")` → convierte el texto `"5"` en el número `5` (entero).  
+- `float("3.14")` → convierte el texto `"3.14"` en el número `3.14` (decimal).  
+- `str(100)` → convierte el número `100` en el texto `"100"`.  
+
+Ejemplo práctico:  
+
+```python
+edad = input("¿Cuántos años tenés? ")   # llega como texto
+edad = int(edad)                        # lo convertimos a número
+print("El año que viene tendrás:", edad + 1)
+``` 
+Tambien se puede hacer de la siguiente forma:
+
+```python
+edad = int(input("¿Cuántos años tenés? ")  #Anidando el casting
+```
 
 ---
 # 📝 Ejercicios Progresivos – Python Básico (Partes 1 a 4)
